@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BaseRepo.Repository.Base
 {
-    public class BaseRepository<TEntity> : IDeveloperRepository<TEntity> where TEntity : class
+    public class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : class
     {
         public readonly ApplicationDbContext _context;
 

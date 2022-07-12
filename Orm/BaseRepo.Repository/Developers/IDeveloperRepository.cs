@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BaseRepo.Repository.Developers
 {
-    public interface IDeveloperRepository:IDeveloperRepository<Developer>
+    public interface IDeveloperRepository:IBaseRepository<Developer>
     {
         List<Developer> GetTopThreeDeveloper();
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BaseRepo.Repository.Base
 {
-    public interface IDeveloperRepository<TEntity> where TEntity : class
+    public interface IBaseRepository<TEntity> where TEntity : class
     {
         int Add(TEntity TEntity); 
         int AddRange(IEnumerable<TEntity> entities);
